@@ -1,38 +1,7 @@
-// Ionic Variables and Theming. For more info, please see:
-// http://ionicframework.com/docs/theming/
 
-// Font path is used to include ionicons,
-// roboto, and noto sans fonts
 $font-path: "../assets/fonts";
-
-
-// The app direction is used to include
-// rtl styles in your app. For more info, please see:
-// http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
-
-
 @import "ionic.globals";
-
-
-// Shared Variables
-// --------------------------------------------------
-// To customize the look and feel of this app, you can override
-// the Sass variables found in Ionic's source scss files.
-// To view all the possible Ionic variables, see:
-// http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
-
-// Named Color Variables
-// --------------------------------------------------
-// Named colors makes it easy to reuse colors on various components.
-// It's highly recommended to change the default colors
-// to match your app's branding. Ionic uses a Sass map of
-// colors so you can add, rename and remove colors as needed.
-// The "primary" color is the only required color in the map.
-
 $colors: (
   primary:    #488aff,
   secondary:  #32db64,
@@ -40,49 +9,105 @@ $colors: (
   light:      #f4f4f4,
   dark:       #222
 );
-
-
-// App iOS Variables
-// --------------------------------------------------
-// iOS only Sass variables can go here
-
-
-
-
-// App Material Design Variables
-// --------------------------------------------------
-// Material Design only Sass variables can go here
-
-
-
-
-// App Windows Variables
-// --------------------------------------------------
-// Windows only Sass variables can go here
-
-
-
-
-// App Theme
-// --------------------------------------------------
-// Ionic apps can have different themes applied, which can
-// then be future customized. This import comes last
-// so that the above variables are used and Ionic's
-// default are overridden.
-
 @import "ionic.theme.default";
-
-
-// Ionicons
-// --------------------------------------------------
-// The premium icon font for Ionic. For more info, please see:
-// http://ionicframework.com/docs/ionicons/
-
 @import "ionic.ionicons";
-
-
-// Fonts
-// --------------------------------------------------
-
 @import "roboto";
 @import "noto-sans";
+
+.card{
+  display: flex;
+  width:100%;
+  padding:15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border:1px solid rgba(0,0,0,0.1);
+  box-shadow: 2px 2px rgba(0,0,0,0.1);
+  margin:2px 0px 10px 0px;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ccc;
+  color:#323232;  
+  height:40px;
+}
+.nav span{
+  margin:10px;
+}
+.title-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  width:100%;
+}
+.title-card > span:nth-child(1){
+  margin-right:5px;
+  width:40%;
+}
+.title-card > span:nth-child(2){  
+  width:100%;  
+}
+.img-thumb{
+  display: flex;
+  width:80px;
+  height:80px;
+  margin:4px;
+  border-radius: 100%;
+}
+.box-search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100px;
+  background: #f6f6f6;
+  border-radius: 10px;
+  padding:15px;
+  margin-bottom:20px;
+}
+.search{
+  display: flex;
+  width:100%;
+  border:none;
+  height:50px;
+  padding-left:10px;
+  align-items: center;
+  background: transparent;
+  border-bottom:1px solid #323232;
+  margin-bottom: 15px;
+}
+.search:focus::-webkit-input-placeholder{
+  color:transparent;
+}
+.social{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.social div{
+  display: flex;
+  align-items: center;
+  margin:3px;
+  color:#ccc;
+}
+.social div span{
+  display: flex;
+  align-items: center;
+  margin:3px;
+  color:#ccc;
+}
+.wrap-buttons{
+  display: flex;
+  width:100%;
+  justify-content: space-between;
+}
+.wrap-buttons span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid #019FDA;
+  border-radius:5px;
+  width:45%;
+  height:45px;
+}
